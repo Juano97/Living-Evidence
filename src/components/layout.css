@@ -1,0 +1,13 @@
+@import "@fontsource-variable/saira";
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+  font-family: "Saira";
+}
+
+body {
+  margin: 0px;
+}
