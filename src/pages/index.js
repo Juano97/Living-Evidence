@@ -14,14 +14,7 @@ export default function Home() {
       >
         <Box sx={{ background: "#fff" }}>
           {/* background: "#cfeeed" */}
-          <Container>
-            <StaticImage
-              src="../assets/images/logo-h-c.png"
-              alt="bkg"
-              placeholder="tracedSVG"
-              layout="fullWidth"
-            ></StaticImage>
-          </Container>
+          <Container></Container>
           <Container sx={{ height: "50px" }}></Container>
         </Box>
         <Container
