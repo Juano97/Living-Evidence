@@ -6,11 +6,62 @@ import {
   Container,
   Divider,
   Chip,
+  Grid,
+  Card,
+  Link,
+  CardContent,
   Button,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 
+// supporting tools
+
+// https://living-evidence.epistemonikos.org/home
+// LE-IHD framework based tool
+
+// LE-synthesis protocol template
+// LE-synthesis baseline report template
+// LE- synthesis update report template
+// LE-synthesis PRISMA template
+
+// training
+
+// Living evidence and supporting tools
+// Evidence synthesis to inform health decisions
+// The GRADE approach in developing recomendations
+// Living heath technology assesment
+// Implementing recomendations in clinical settings
+
 const LE_IHD_Tools = () => {
+  const supportingTools = [
+    "LE-IHD framework based tool",
+    "LE-synthesis protocol template",
+    "LE-synthesis baseline report template",
+    "LE- synthesis update report template",
+    "LE-synthesis PRISMA template",
+  ];
+
+  const trainingTools = [
+    "Living evidence and supporting tools",
+    "Evidence synthesis to inform health decisions",
+    "The GRADE approach in developing recommendations",
+    "Living health technology assessment",
+    "Implementing recommendations in clinical settings",
+  ];
+
+  const supportingLinks = [
+    "https://living-evidence.epistemonikos.org/home",
+    "",
+    "https://osf.io/jtw35/files/osfstorage/64b49934e17d4f03687aa4f6",
+    "",
+    "",
+  ];
+
+  const trainingLinks = ["", "", "", "", ""];
+
   return (
     <Layout>
       <Box
@@ -45,7 +96,7 @@ const LE_IHD_Tools = () => {
                 width: "100%",
               }}
             >
-              LE-IHD Tools
+              Training and Tools
             </Typography>
           </Container>
           <Container sx={{ height: "50px" }}></Container>
@@ -58,7 +109,7 @@ const LE_IHD_Tools = () => {
           <Typography
             variant="body1"
             sx={{
-              fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
+              fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
               fontFamily: "calibri",
               marginTop: "-30px",
               paddingTop: {
@@ -83,10 +134,35 @@ const LE_IHD_Tools = () => {
             gutterBottom
           >
             Our team has produced a comprehensive set of tools for supporting
-            the planning and development of living evidence synthesis
-            <Divider
-              sx={{ marginX: "100px", marginY: "20px", background: "black" }}
-            />
+            the planning and development of living evidence synthesis.
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
+              fontFamily: "calibri",
+              marginTop: "-30px",
+              paddingTop: {
+                xl: "40px",
+                lg: "40px",
+                md: "40px",
+                sm: "20px",
+                xs: "20px",
+              },
+              paddingX: {
+                xl: "40px",
+                lg: "40px",
+                md: "40px",
+                sm: "20px",
+                xs: "20px",
+              },
+              border: "2px",
+              borderRadius: "50px",
+              backgroundClip: "border-box",
+              background: "#fff",
+            }}
+            gutterBottom
+          >
             The most recent breakthrough has been a Framework-based Living
             evidence to inform health decisions interactive tool (LE-IHD
             framework) which provides users with a list of guidance questions as
@@ -94,54 +170,123 @@ const LE_IHD_Tools = () => {
             synthesis tasks.
           </Typography>
         </Container>
-        <Container
-          sx={{
-            padding: "0px 0px !important",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            marginTop: "60px",
-          }}
-        >
-          <Button
-            sx={{
-              background: "#548235",
-              color: "#fff",
-              "&:hover": {
-                background: "#c6faa5",
-                color: "#548235",
-              },
-            }}
-            href="https://living-evidence.epistemonikos.org/home"
-            target="_blank"
+        <Container sx={{ marginTop: "50px" }}>
+          <Grid
+            container
+            spacing={0.5}
+            sx={{ display: "flex", justifyContent: "center" }}
           >
-            LE-IHD Framework
-          </Button>
+            <Grid md={6}>
+              <Card variant="outlined" sx={{ border: "none" }}>
+                <CardContent sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontSize: { xl: 28, lg: 28, md: 28, sm: 24, xs: 24 },
+                    }}
+                    gutterBottom
+                  >
+                    Training
+                  </Typography>
+                  <Divider
+                    sx={{
+                      marginX: "50px",
+                      marginTop: "20px",
+                      marginBottom: "25px",
+                      height: "2px",
+                      background: "#339999",
+                    }}
+                  />
+                  <List
+                    disablePadding={true}
+                    dense={true}
+                    sx={{ textAlign: "center" }}
+                  >
+                    {trainingTools.map((repo, i) => (
+                      <ListItem sx={{ textAlign: "left", paddingLeft: "50px" }}>
+                        <ListItemText>
+                          <Link
+                            alignItems={"center"}
+                            sx={{
+                              fontSize: {
+                                xl: 20,
+                                lg: 20,
+                                md: 20,
+                                sm: 18,
+                                xs: 18,
+                              },
+                            }}
+                            href=""
+                            target="_blank"
+                            underline="none"
+                            color="black"
+                          >
+                            {repo}
+                          </Link>
+                        </ListItemText>
+                      </ListItem>
+                    ))}
+                  </List>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid md={6}>
+              <Card variant="outlined" sx={{ border: "none" }}>
+                <CardContent sx={{ textAlign: "center" }}>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontSize: { xl: 28, lg: 28, md: 28, sm: 24, xs: 24 },
+                    }}
+                    gutterBottom
+                  >
+                    Supporting Tools
+                  </Typography>
+                  <Divider
+                    sx={{
+                      marginX: "50px",
+                      marginTop: "20px",
+                      marginBottom: "25px",
+                      height: "2px",
+                      background: "#339999",
+                    }}
+                  />
+                  <List
+                    disablePadding={true}
+                    dense={true}
+                    sx={{ textAlign: "center" }}
+                  >
+                    {supportingTools.map((repo, i) => (
+                      <ListItem sx={{ textAlign: "left", paddingLeft: "50px" }}>
+                        <ListItemText>
+                          <Link
+                            alignItems={"center"}
+                            sx={{
+                              fontSize: {
+                                xl: 20,
+                                lg: 20,
+                                md: 20,
+                                sm: 18,
+                                xs: 18,
+                              },
+                            }}
+                            href={supportingLinks[i]}
+                            target="_blank"
+                            underline="none"
+                            color="black"
+                          >
+                            {repo}
+                          </Link>
+                        </ListItemText>
+                      </ListItem>
+                    ))}
+                  </List>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
         </Container>
-        <Container
-          sx={{
-            padding: "0px 0px !important",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            marginTop: "40px",
-          }}
-        >
-          <Button
-            sx={{
-              background: "#2e75b6",
-              color: "#fff",
-              "&:hover": {
-                background: "#a5d1fa",
-                color: "#2e75b6",
-              },
-            }}
-            href="https://living-evidence.epistemonikos.org/home"
-            target="_blank"
-          >
-            Templates
-          </Button>
-        </Container>
+
         <Box sx={{ background: "#fff" }}></Box>
       </Box>
     </Layout>

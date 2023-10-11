@@ -25,11 +25,9 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Box
-        sx={
-          {
-            //height: "calc(100% - 64px)",
-          }
-        }
+        sx={{
+          height: "calc(100% - 64px)",
+        }}
       >
         {children}
       </Box>

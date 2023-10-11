@@ -22,9 +22,9 @@ const navItems = [
   "About Us",
   "Research and \n Innovation",
   "Community and \n Services",
-  "LE-IHD Tools",
+  "Training and \n Tools",
   "LE Synthesis \n Repository",
-  "Contact",
+  "Contact Us",
 ];
 const navPages = [
   "",
@@ -67,7 +67,14 @@ export default function Navbar() {
                   navigate("/" + navPages[i]);
                 }}
               >
-                <ListItemText primary={item} />
+                <ListItemText
+                  primary={item}
+                  sx={{
+                    "& span, & svg": {
+                      fontSize: 26,
+                    },
+                  }}
+                />
               </ListItemButton>
             </ListItem>
             <Divider sx={{ marginX: "50px" }} />
@@ -83,7 +90,7 @@ export default function Navbar() {
       <AppBar
         component="nav"
         sx={{
-          backgroundImage: "linear-gradient(to right, #fff , #fff)",
+          backgroundImage: "linear-gradient(to right, #fff , #339999)",
         }}
       >
         <Toolbar>
@@ -129,7 +136,9 @@ export default function Navbar() {
                 key={item}
                 sx={{
                   color: "#333333",
-                  marginRight: "10px",
+                  marginRight: "25px",
+                  fontFamily: "calibri",
+                  fontSize: 15,
                 }}
                 onClick={() => {
                   navigate("/" + navPages[i]);

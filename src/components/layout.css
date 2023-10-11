@@ -5,9 +5,19 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
-  font-family: "Saira";
+  font-family: "Saira", "calibri";
 }
 
 body {
   margin: 0px;
+}
+
+#panel2a-header-summary {
+  .MuiAccordionSummary-content {
+    margin: 0px;
+  }
+}
+
+#panel2a-header-details {
+  padding-top: 0;
 }

@@ -203,7 +203,7 @@ const Research = () => {
               sx={{ display: { xs: "none", sm: "block" }, marginRight: "10px" }}
             >
               <StaticImage
-                src="../assets/images/simple-logo-orange.png"
+                src="../assets/images/simple-logo-orange-round.png"
                 alt="bkg"
                 height={100}
                 placeholder="tracedSVG"
@@ -312,14 +312,14 @@ const Research = () => {
                 disableGutters
                 // elevation={0}
                 sx={{
-                  // borderRadius: "25px",
-                  // border: "0.01px solid #fff",
-                  // backgroundClip: "border-box",
-                  background: "#e4e4e4",
+                  borderRadius: "25px",
+                  border: "0.01px solid #fff",
+                  backgroundClip: "border-box",
+                  background: "#ddd",
                   marginY: "20px",
-                  // "&:before": {
-                  //   display: "none",
-                  // },
+                  "&:before": {
+                    display: "none",
+                  },
                 }}
               >
                 <AccordionSummary

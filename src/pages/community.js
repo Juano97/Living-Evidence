@@ -138,7 +138,7 @@ const Community = () => {
                     }}
                     gutterBottom
                   >
-                    Methodological Advise
+                    Methodological Advice
                   </Typography>
                   <Divider
                     sx={{
@@ -158,7 +158,7 @@ const Community = () => {
                     }}
                     gutterBottom
                   >
-                    We provide methodological advise and support to governmental
+                    We provide methodological advice and support to governmental
                     and institutional projects of adoption and adaptation and
                     development of evidence-based recommendations, ensuring
                     their constant updating as "Living recommendations".
@@ -206,6 +206,14 @@ const Community = () => {
               </Card>
             </Grid>
           </Grid>
+          <Divider
+            sx={{
+              marginY: "40px",
+              marginX: "100px",
+              height: "2px",
+              background: "#99ccff",
+            }}
+          />
         </Container>
         <Container sx={{ display: "flex" }}>
           <Typography
@@ -218,9 +226,145 @@ const Community = () => {
               width: "100%",
             }}
           >
-            Our Partners
+            Organizations we support
           </Typography>
         </Container>
+
+        <Container
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "50px",
+          }}
+        >
+          <Grid
+            container
+            sx={{
+              paddingX: { sm: "120px", md: "50px" },
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Grid md={2}></Grid>
+            <Grid
+              md={3}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "160px",
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_santpau.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={2}></Grid>
+            <Grid
+              md={3}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                style={{ display: "flex", justifyContent: "center" }}
+                src={"../assets/images/logo_aragones.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={2}></Grid>
+            <Grid
+              item
+              md={3}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_madrid.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={1}></Grid>
+
+            <Grid
+              item
+              md={3}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_navarro.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={1}></Grid>
+            <Grid
+              md={3}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_osteba.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={2}></Grid>
+            <Grid
+              md={3}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_sescs.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={2}></Grid>
+            <Grid
+              md={3}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                height: "160px",
+                marginTop: { xs: "10px", sm: "10px", md: "0px" },
+              }}
+            >
+              <StaticImage
+                src={"../assets/images/logo_aval.png"}
+                height={160}
+              ></StaticImage>
+            </Grid>
+            <Grid md={2}></Grid>
+          </Grid>
+        </Container>
+        <Container sx={{ height: "60px" }}></Container>
       </Box>
     </Layout>
   );

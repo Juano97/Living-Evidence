@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { Box, Typography, Container, Divider, Chip } from "@mui/material";
+import { Box, Typography, Container, Divider, Grid } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 
 const About = () => {
@@ -110,7 +110,110 @@ const About = () => {
               Our Partners
             </Typography>
           </Container>
-          <Container>Aqui van las fotos de los partners</Container>
+          <Container
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "50px",
+            }}
+          >
+            <Grid
+              container
+              sx={{
+                paddingX: { sm: "120px", md: "50px" },
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Grid md={2}></Grid>
+              <Grid
+                md={3}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "160px",
+                }}
+              >
+                <StaticImage
+                  src={"../assets/images/logo_epistemonikos1.png"}
+                  height={160}
+                ></StaticImage>
+              </Grid>
+              <Grid md={2}></Grid>
+              <Grid
+                md={3}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                <StaticImage
+                  style={{ display: "flex", justifyContent: "center" }}
+                  src={"../assets/images/logo_cochrane.png"}
+                  height={160}
+                ></StaticImage>
+              </Grid>
+              <Grid md={2}></Grid>
+
+              <Grid
+                item
+                md={3}
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                <StaticImage
+                  src={"../assets/images/logo_evidence.png"}
+                  height={160}
+                ></StaticImage>
+              </Grid>
+              <Grid md={1}></Grid>
+
+              <Grid
+                item
+                md={3}
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                <StaticImage
+                  src={"../assets/images/logo_future.png"}
+                  height={160}
+                ></StaticImage>
+              </Grid>
+              <Grid md={1}></Grid>
+
+              <Grid
+                md={3}
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                <StaticImage
+                  src={"../assets/images/logo_mcgrade.png"}
+                  height={160}
+                ></StaticImage>
+              </Grid>
+            </Grid>
+          </Container>
+          <Container sx={{ height: "60px" }}></Container>
         </Box>
       </Box>
     </Layout>
