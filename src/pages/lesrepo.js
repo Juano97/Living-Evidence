@@ -43,6 +43,19 @@ const Lesrepo = () => {
     "See in L.OVE",
   ];
 
+  const ongoingProt = [
+    "../assets/pdfs/Effectiveness_and_safety_of_deep_brain_stimulation.pdf",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ];
+
   const ongoingLOVE = [
     "https://app.iloveevidence.com/loves/6442a0185d935300087c89ff?question_domain=5b1dcd8ae611de7ae84e8f14&population=6442b6d7206f2b00076f6a76&intervention=64418d822dfa8e00086a4c99&classification=all",
     "https://app.iloveevidence.com/loves/58c04f21d56e642e050aee10?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d1498e1daeedf730326b7be&intervention=64257d4edc36eb00073b7f30&classification=systematic-review",
@@ -78,7 +91,7 @@ const Lesrepo = () => {
     var temp = [];
     for (let index = 0; index < ongoingSum.length; index++) {
       temp.push({
-        0: "",
+        0: ongoingProt[index],
         1: "",
         2: "",
         3: "",
@@ -329,12 +342,6 @@ const Lesrepo = () => {
                         </Link>
                       </Typography>
                     ) : (
-                      // <>
-                      //   {ongoingDict[i][j].map((letter, z) => (
-                      //     <>{letter.title}</>
-                      //   ))}
-                      // </>
-                      // //<>{console.log(ongoingDict[i][j])}</>
                       <Accordion
                         disableGutters
                         elevation={0}
