@@ -364,7 +364,9 @@ const Community = () => {
             <Grid md={2}></Grid>
           </Grid>
         </Container>
-        <Container sx={{ height: "60px" }}></Container>
+        <Box sx={{ background: "#fff" }}>
+          <Container sx={{ height: "150px" }}></Container>
+        </Box>
       </Box>
     </Layout>
   );

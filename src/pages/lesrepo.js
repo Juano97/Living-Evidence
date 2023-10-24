@@ -44,13 +44,13 @@ const Lesrepo = () => {
   ];
 
   const ongoingProt = [
-    "../assets/pdfs/Effectiveness_and_safety_of_deep_brain_stimulation.pdf",
+    "https://drive.google.com/file/d/1Fh52LANLggi6JJk-pOg1FO__bqm2Y-D6/view?usp=sharing",
+    "https://drive.google.com/file/d/1kws3jxtZ3RzG_A__DdCS-LpEuAulqmAL/view?usp=sharing",
+    "https://drive.google.com/file/d/1UCnTPTIe1R1lO7pm6ZlpHAeOfRlUqIi6/view?usp=sharing",
+    "https://drive.google.com/file/d/1IYj4Maq36rjUD82zPPu1eGn0ihF_lGvo/view?usp=sharing",
     "",
     "",
-    "",
-    "",
-    "",
-    "",
+    "https://drive.google.com/file/d/1dV7QY1gWVqeEBjHG6_LFS67lhRsnoFIt/view?usp=sharing",
     "",
     "",
     "",
@@ -103,6 +103,13 @@ const Lesrepo = () => {
 
   const ongoingDict = getOngoingDict();
 
+  const resolvedDet = [
+    "Protocol",
+    "Baseline Report",
+    "Updated Report",
+    "See in L.OVE",
+  ];
+
   const resolvedSum = [
     "Chimeric antigen receptor T cell therapy for hematological malignancies",
     "Fecal microbiota transplant for ulcerative colitis ",
@@ -112,11 +119,31 @@ const Lesrepo = () => {
     "Bevacizumab, olaparib, rucaparib and niraparib for ovarian cancer",
   ];
 
-  const resolvedDet = [
-    "Protocol",
-    "Baseline Report",
-    "Updated Report",
-    "See in L.OVE",
+  const resolvedProt = [
+    "https://drive.google.com/file/d/1z91-Xu0F3-lwvIWR3tiLdjUcFNpUPtoR/view?usp=share_link",
+    "https://drive.google.com/file/d/1mwoCWdqZh3F2885Ti0Fi5nIOM0c_rWk_/view?usp=sharing",
+    "https://drive.google.com/file/d/13K1tE0RqmIMRCpu578z4MD9OlQUbB05K/view?usp=sharing",
+    "https://drive.google.com/file/d/1BM9VqWeRKEeLrjK_SnnQsNk_gwwW47v7/view?usp=share_link",
+    "https://drive.google.com/file/d/1wb0-h386fNnX5SpZ89lnDv7xJDkNADUN/view?usp=share_link",
+    "https://drive.google.com/file/d/1LLS3Www-jMOVSNq1r4v12bB9AnQnzLmQ/view?usp=sharing",
+  ];
+
+  const resolvedBline = [
+    "https://drive.google.com/file/d/1g1dyAEnjEL5LHBgdE0T3l2aZ9g46fCB3/view?usp=share_link",
+    "https://drive.google.com/file/d/1zIgAeIdSMRJTplmnqIeM4KiwCbg_AQPe/view?usp=sharing",
+    "https://drive.google.com/file/d/1uf--QqHuk0r3VVwS9W3rnrP0xWRdTWO6/view?usp=sharing",
+    "https://drive.google.com/file/d/1quZ3jbnKQEZXUvxKoQkp050Ri-uP9C0O/view?usp=share_link",
+    "",
+    "https://drive.google.com/file/d/1kyzC2vO4Q3qTRYliqrsxniJYeKso-OUy/view?usp=sharing",
+  ];
+
+  const resolvedUpdRe = [
+    "",
+    "https://drive.google.com/file/d/1cEPGL92wsx_SFKz875sdkz0m92jpL37v/view?usp=sharing",
+    "",
+    "https://drive.google.com/file/d/1A14Xzy4l3Hx6V2JR2vH3Jgy9OryaoNuw/view?usp=sharing",
+    "",
+    "https://drive.google.com/file/d/1tfmQ7EvJk8MTyHbSGTwicRSBxgp8Ghet/view?usp=sharing",
   ];
 
   const resolvedLOVE = [
@@ -125,16 +152,34 @@ const Lesrepo = () => {
     "https://app.iloveevidence.com/loves/60be456f35525860bb2a3a02?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d27427edaeedf1d3af33328&intervention=60ad7996355258737783d474&classification=all",
     "https://app.iloveevidence.com/loves/5b7e78ddc80dd4376f2b3dd5?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d52919a69c00e3de733d81f&intervention=5d67d29d69c00e131b5a4cad&classification=systematic-review",
     "https://app.iloveevidence.com/loves/598e0a2b65dee02d5eede318?question_domain=5b1dccf3e611de7ae84e8f12&population=5d07efb1dbe4d25bcebee227&intervention=5e66a2403d051578b5c8b494&classification=systematic-review",
-    "",
+    [
+      {
+        title: "Bevacizumab",
+        link: "https://app.iloveevidence.com/loves/5ea7378c3d0515415050441e?question_domain=5b1dcd8ae611de7ae84e8f14&population=5ea737633d0515415050441d&intervention=5d37695adaeedf04f2da5f95&classification=all",
+      },
+      {
+        title: "Olaparib",
+        link: "https://app.iloveevidence.com/loves/5ea7378c3d0515415050441e?question_domain=5b1dcd8ae611de7ae84e8f14&population=5ea737633d0515415050441d&intervention=60423b7c3d051526aac19829&classification=all",
+      },
+      {
+        title: "Niraparib",
+        link: "https://app.iloveevidence.com/loves/5ea7378c3d0515415050441e?question_domain=5b1dcd8ae611de7ae84e8f14&population=5ea737633d0515415050441d&intervention=60423c3569c00e308796de9e&classification=all",
+      },
+      {
+        title: "Rucaparib",
+        link: "https://app.iloveevidence.com/loves/5ea7378c3d0515415050441e?question_domain=5b1dcd8ae611de7ae84e8f14&population=5ea737633d0515415050441d&intervention=60423be23d051526a8c15c41&classification=all",
+      },
+    ],
+    ,
   ];
 
   const getResolvedDict = () => {
     var temp = [];
     for (let index = 0; index < resolvedSum.length; index++) {
       temp.push({
-        0: "",
-        1: "",
-        2: "",
+        0: resolvedProt[index],
+        1: resolvedBline[index],
+        2: resolvedUpdRe[index],
         3: resolvedLOVE[index],
       });
     }
@@ -458,6 +503,7 @@ const Lesrepo = () => {
               zIndex: 1000,
             }}
           >
+            {" "}
             <Container sx={{ display: "flex" }}>
               <Typography
                 variant="h3"
@@ -505,6 +551,7 @@ const Lesrepo = () => {
                     sx={{
                       fontFamily: "calibri",
                       fontSize: { xl: 24, lg: 24, md: 24, sm: 18, xs: 18 },
+                      position: "relative",
                     }}
                     gutterBottom
                   >
@@ -512,26 +559,96 @@ const Lesrepo = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  {resolvedDet.map((detail, j) => (
-                    <Typography
-                      variant="body1"
-                      sx={{
-                        fontFamily: "calibri",
-                        fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
-                      }}
-                      gutterBottom
-                    >
-                      <Link
-                        fontWeight="bold"
-                        href={resolvedDict[i][j]}
-                        target="_blank"
-                        underline="none"
-                        color="black"
+                  {resolvedDet.map((detail, j) =>
+                    typeof resolvedDict[i][j] == "string" ? (
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontFamily: "calibri",
+                          fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
+                        }}
+                        gutterBottom
                       >
-                        {detail}
-                      </Link>
-                    </Typography>
-                  ))}
+                        <Link
+                          fontWeight="bold"
+                          href={resolvedDict[i][j]}
+                          target="_blank"
+                          underline="none"
+                          color="black"
+                        >
+                          {detail}
+                        </Link>
+                      </Typography>
+                    ) : (
+                      <Accordion
+                        disableGutters
+                        elevation={0}
+                        sx={{
+                          border: "0.01px solid #fff",
+                          backgroundClip: "border-box",
+                          background: "#fff",
+                          top: "-12px",
+                          "&:before": {
+                            display: "none",
+                          },
+                        }}
+                      >
+                        <AccordionSummary
+                          expandIcon={<ExpandMore />}
+                          aria-controls="panel2a-content"
+                          id="panel2a-header-summary"
+                          sx={{
+                            padding: "0px",
+                          }}
+                        >
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              fontFamily: "calibri",
+                              fontWeight: "bold",
+                              fontSize: {
+                                xl: 18,
+                                lg: 18,
+                                md: 18,
+                                sm: 16,
+                                xs: 16,
+                              },
+                            }}
+                          >
+                            {detail}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails id="panel2a-header-details">
+                          {resolvedDict[i][j].map((multidet, z) => (
+                            <Typography
+                              variant="body1"
+                              sx={{
+                                fontFamily: "calibri",
+                                fontSize: {
+                                  xl: 18,
+                                  lg: 18,
+                                  md: 18,
+                                  sm: 16,
+                                  xs: 16,
+                                },
+                              }}
+                              gutterBottom
+                            >
+                              <Link
+                                fontWeight="bold"
+                                href={multidet.link}
+                                target="_blank"
+                                underline="none"
+                                color="black"
+                              >
+                                {multidet.title}
+                              </Link>
+                            </Typography>
+                          ))}
+                        </AccordionDetails>
+                      </Accordion>
+                    )
+                  )}
                 </AccordionDetails>
               </Accordion>
             ))}
@@ -546,7 +663,7 @@ const Lesrepo = () => {
           </Box>
         </Container>
         <Box sx={{ background: "#fff" }}>
-          <Container sx={{ height: "50px" }}></Container>
+          <Container sx={{ height: "150px" }}></Container>
         </Box>
       </Box>
     </Layout>

@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Box, Container, Grid } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./layout.css";
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["Saira", "sans-serif"].join(","),
+    fontFamily: ["Saira", "calibri", "sans-serif"].join(","),
   },
 });
 
@@ -26,11 +27,12 @@ const Layout = ({ children }) => {
       <Navbar />
       <Box
         sx={{
-          height: "calc(100% - 64px)",
+          height: "calc(100% - 128px)",
         }}
       >
         {children}
       </Box>
+      <Footer />
     </ThemeProvider>
   );
 };

@@ -203,7 +203,7 @@ const Research = () => {
               sx={{ display: { xs: "none", sm: "block" }, marginRight: "10px" }}
             >
               <StaticImage
-                src="../assets/images/simple-logo-orange-round.png"
+                src="../assets/images/simple-logo-orange.png"
                 alt="bkg"
                 height={100}
                 placeholder="tracedSVG"
@@ -361,7 +361,7 @@ const Research = () => {
           </Box>
         </Container>
         <Box sx={{ background: "#fff" }}>
-          <Container sx={{ height: "50px" }}></Container>
+          <Container sx={{ height: "150px" }}></Container>
         </Box>
       </Box>
     </Layout>
