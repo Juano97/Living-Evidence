@@ -73,7 +73,6 @@ export default function Footer() {
           <Typography
             sx={{
               fontSize: { xl: 16, lg: 16, md: 16, sm: 16, xs: 16 },
-              fontFamily: "calibri",
               color: "black",
               marginBottom: "15px",
             }}
