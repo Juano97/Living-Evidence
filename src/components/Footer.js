@@ -13,6 +13,7 @@ import {
   Tooltip,
   Fade,
   Button,
+  Divider,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link, navigate } from "gatsby";
@@ -47,12 +48,8 @@ export default function Footer() {
     <Box
       sx={{
         width: "100%",
-        position: "fixed",
         display: { sm: "flex", xs: "none" },
         background: "#fff",
-        bottom: 0,
-        zIndex: "1000",
-        opacity: "85%",
       }}
     >
       <Container
@@ -64,6 +61,33 @@ export default function Footer() {
           textAlign: "center",
         }}
       >
+        {/* <Typography
+          sx={{
+            fontSize: { xl: 12, lg: 12, md: 12, sm: 12, xs: 12 },
+            marginBottom: "10px",
+          }}
+        >
+          le-ihd.program@livingevidenceihd.com
+        </Typography> */}
+
+        <Box sx={{ width: 500, marginBottom: "10px" }}>
+          {title.map((name, j) => (
+            <Tooltip
+              title={name}
+              arrow
+              TransitionComponent={Fade}
+              TransitionProps={{ timeout: 600 }}
+            >
+              <Button
+                onClick={() => {
+                  navigate("/" + navPages[j]);
+                }}
+              >
+                {<img height={24} src={pngs[j]}></img>}
+              </Button>
+            </Tooltip>
+          ))}
+        </Box>
         <Button
           onClick={() => {
             navigate("/");
@@ -77,37 +101,9 @@ export default function Footer() {
               marginBottom: "15px",
             }}
           >
-            2023 - Living Evidence IHD
+            2023 - Living Evidence To Inform Health Decisions Program
           </Typography>
         </Button>
-        {/* <Typography
-          sx={{
-            fontSize: { xl: 12, lg: 12, md: 12, sm: 12, xs: 12 },
-            marginBottom: "10px",
-          }}
-        >
-          le-ihd.program@livingevidenceihd.com
-        </Typography> */}
-
-        <BottomNavigation sx={{ width: 500, marginBottom: "10px" }}>
-          {title.map((name, j) => (
-            <Tooltip
-              title={name}
-              arrow
-              TransitionComponent={Fade}
-              TransitionProps={{ timeout: 600 }}
-              sx={{ zIndex: "1001" }}
-            >
-              <BottomNavigationAction
-                value="nearby"
-                icon={<img height={24} src={pngs[j]}></img>}
-                onClick={() => {
-                  navigate("/" + navPages[j]);
-                }}
-              />
-            </Tooltip>
-          ))}
-        </BottomNavigation>
       </Container>
     </Box>
   );

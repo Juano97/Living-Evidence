@@ -30,8 +30,6 @@ const Lesrepo = () => {
     "Phophylaxis with vitamin D compared to placebo or no prophilaxis In patients at risk of SARS-Cov-2 infection or with mild, moderate or severe COVID-19.",
     "Hyperbaric oxygen therapy In patients with persistent COVID 19",
     "Biologic therapy (monoclonal antibodies) be given in combination with other interventions (LABA/LAMA; ICS, pulmonary rehabilitation) in adults with COPD",
-    "Glucagon-like peptide analogues and agonists in type II diabetes",
-    "Bevacizumab, Olaparib, Rucaparib and Niraparib for ovarian cancer ",
     "Combined therapy vs monotherapy in treatment of hypertension in adults",
   ];
 
@@ -51,8 +49,6 @@ const Lesrepo = () => {
     "",
     "",
     "https://drive.google.com/file/d/1dV7QY1gWVqeEBjHG6_LFS67lhRsnoFIt/view?usp=sharing",
-    "",
-    "",
     "",
   ];
 
@@ -82,8 +78,6 @@ const Lesrepo = () => {
     ],
     "https://app.iloveevidence.com/loves/5e6fdb9669c00e4ac072701d?question_domain=5b1dcd8ae611de7ae84e8f14&population=60bf8350ea8890b2d8b37150&intervention=5e8fbba83d05155dd92c3199&intervention_variable=603b9fe03d05151f35cf13dc&classification=all",
     "https://app.iloveevidence.com/loves/5c87af8ac80dd42a1ac0c712?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d0b5bdedbe4d25bcfbee803&intervention=642185205ef94100080f67b1&classification=systematic-review",
-    "",
-    "",
     "",
   ];
 
@@ -663,7 +657,7 @@ const Lesrepo = () => {
           </Box>
         </Container>
         <Box sx={{ background: "#fff" }}>
-          <Container sx={{ height: "150px" }}></Container>
+          <Container sx={{ height: "50px" }}></Container>
         </Box>
       </Box>
     </Layout>

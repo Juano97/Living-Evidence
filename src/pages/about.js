@@ -1,9 +1,47 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { Box, Typography, Container, Divider, Grid } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Divider,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+} from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 
+import maria_ximena from "../assets/images/team/Maria_Ximena.png";
+import ariadna from "../assets/images/team/Ariadna.png";
+import gabriel_rada from "../assets/images/team/Gabriel_Rada.png";
+import gerard from "../assets/images/team/Gerard_Urrutia.png";
+
 const About = () => {
+  const MyCardL = (img, name, grade) => {
+    return (
+      <Card sx={{ display: "flex" }} elevation={0}>
+        <CardMedia component="img" sx={{ width: "100px" }} image={img} />
+        <CardContent
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: { xl: 13, lg: 13, md: 13, sm: 13, xs: 13 },
+              fontWeight: "bold",
+            }}
+          >
+            {name} , <br /> {grade}
+          </Typography>
+        </CardContent>
+      </Card>
+    );
+  };
+
   return (
     <Layout>
       <Box
@@ -95,6 +133,116 @@ const About = () => {
             }}
           />
         </Container>
+        <Box sx={{ background: "#fff" }}>
+          <Container sx={{ display: "flex" }}>
+            <Typography
+              variant="h3"
+              sx={{
+                fontSize: { xl: 32, lg: 32, md: 32, sm: 30, xs: 26 },
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+              }}
+            >
+              Our Team
+            </Typography>
+          </Container>
+          <Container
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "50px",
+            }}
+          >
+            <Grid
+              container
+              sx={{
+                paddingX: { sm: "120px", md: "50px" },
+                paddingLeft: { sm: "240px", md: "150px" },
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Grid
+                md={5}
+                sx={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                  height: "160px",
+                }}
+              >
+                {MyCardL(
+                  maria_ximena,
+                  "María Ximena Rojas MSc. Ph.D",
+                  "LE-IHD Program Group Leader"
+                )}
+              </Grid>
+              <Grid md={2}></Grid>
+              <Grid
+                md={5}
+                sx={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                {MyCardL(
+                  ariadna,
+                  "Ariadna Auladell-Rispau MSc. Ph.D (c) ",
+                  "LE-IHD Research Coordinator"
+                )}
+              </Grid>
+              <Grid
+                md={5}
+                sx={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                  height: "160px",
+                }}
+              >
+                {MyCardL(
+                  gerard,
+                  "Gerard Urrutia. MD. Ph.D",
+                  "Director Iberoamerican Cochrane Center"
+                )}
+              </Grid>
+              <Grid md={2}></Grid>
+              <Grid
+                md={5}
+                sx={{
+                  display: "flex",
+                  justifyContent: "left",
+                  alignItems: "center",
+                  height: "160px",
+                  marginTop: { xs: "10px", sm: "10px", md: "0px" },
+                }}
+              >
+                {MyCardL(
+                  gabriel_rada,
+                  "Gabriel Rada MD.",
+                  "Director Fundación Epistemonikos"
+                )}
+              </Grid>
+            </Grid>
+          </Container>
+          <Container sx={{ height: "60px" }}>
+            <Divider
+              variant="middle"
+              sx={{
+                marginY: "40px",
+                marginX: "100px",
+                background: "black",
+                height: "2px",
+              }}
+            />
+          </Container>
+        </Box>
         <Box sx={{ background: "#fff" }}>
           <Container sx={{ display: "flex" }}>
             <Typography

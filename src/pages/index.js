@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Box, Typography, Container, Grid, Paper } from "@mui/material";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
-import foto from "../assets/images/logo-h-c.png";
+import Carrusel from "../components/Carrusel";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Box
         sx={{
           height: "100%",
+          marginTop: "20px",
         }}
       >
         <Container>
@@ -47,10 +48,7 @@ export default function Home() {
               </Paper>
             </Box>
           </Grid> */}
-          <Grid
-            md={7}
-            sx={{ paddingLeft: { xl: "40px", lg: "40px", md: "40px" } }}
-          >
+          <Grid md={7}>
             <Box sx={{ background: "#fff" }}>
               <Container
                 sx={{ height: { xs: "30px", sm: "50px", md: "100px" } }}
@@ -122,8 +120,6 @@ export default function Home() {
                     xs: "20px",
                   },
                   height: "100%",
-
-                  background: "white",
                 }}
                 gutterBottom
               >
@@ -140,13 +136,16 @@ export default function Home() {
                 and the most innovative technologies to the health sector
                 organizations.
               </Typography>
+              <Carrusel />
             </Container>
           </Grid>
           <Grid md={2}></Grid>
         </Container>
       </Box>
 
-      <Box></Box>
+      <Box sx={{ background: "#fff" }}>
+        <Container sx={{ height: "100px" }}></Container>
+      </Box>
     </Layout>
   );
 }

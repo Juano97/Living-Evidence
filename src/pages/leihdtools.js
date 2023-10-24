@@ -288,7 +288,7 @@ const LE_IHD_Tools = () => {
         </Container>
 
         <Box sx={{ background: "#fff" }}>
-          <Container sx={{ height: "150px" }}></Container>
+          <Container sx={{ height: "50px" }}></Container>
         </Box>
       </Box>
     </Layout>

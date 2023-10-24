@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Grid, Divider } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./layout.css";
 
@@ -25,13 +25,16 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <Box
+      <Box sx={{ minHeight: "calc(100% - 210px)" }}>{children}</Box>
+      {/* <Divider
         sx={{
-          height: "calc(100% - 128px)",
+          height: "2px",
+          marginBottom: "25px",
+          marginX: "100px",
+          //backgroundImage: "linear-gradient(to right, #fff , #339999)",
+          background: "#339999",
         }}
-      >
-        {children}
-      </Box>
+      /> */}
       <Footer />
     </ThemeProvider>
   );
