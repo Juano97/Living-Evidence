@@ -143,7 +143,7 @@ function Carrusel() {
           maxWidth: "100%",
           flexGrow: 1,
           paddingX: "70px !important",
-          marginTop: "30px",
+          marginTop: "20px",
         }}
       >
         <Paper
@@ -179,7 +179,7 @@ function Carrusel() {
                   <Box
                     component="img"
                     sx={{
-                      height: 270,
+                      height: 230,
                       display: "block",
                       marginRight: "50px",
                       flexGrow: 1,

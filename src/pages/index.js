@@ -102,7 +102,7 @@ export default function Home() {
               <Typography
                 variant="body1"
                 sx={{
-                  fontSize: { xl: 22, lg: 22, md: 22, sm: 18, xs: 18 },
+                  fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
                   fontFamily: "calibri",
                   marginTop: "-30px",
                   paddingTop: {
