@@ -17,6 +17,9 @@ import ariadna from "../assets/images/team/Ariadna.png";
 import gabriel_rada from "../assets/images/team/Gabriel_Rada.png";
 import gerard from "../assets/images/team/Gerard_Urrutia.png";
 
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
+
 const About = () => {
   const MyCardL = (img, name, grade) => {
     return (
@@ -90,7 +93,15 @@ const About = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",

@@ -14,6 +14,8 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 import { createTheme } from "@mui/material/styles";
 import { StaticImage } from "gatsby-plugin-image";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 const theme = createTheme({
   typography: {
@@ -234,7 +236,15 @@ const Research = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",
@@ -330,7 +340,15 @@ const Research = () => {
                   <Typography
                     variant="body1"
                     sx={{
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       fontSize: { xl: 24, lg: 24, md: 24, sm: 18, xs: 18 },
                     }}
                     gutterBottom
@@ -341,7 +359,15 @@ const Research = () => {
                 <AccordionDetails>
                   <Typography
                     sx={{
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
                     }}
                   >

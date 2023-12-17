@@ -14,6 +14,8 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 import { createTheme } from "@mui/material/styles";
 import { StaticImage } from "gatsby-plugin-image";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 const theme = createTheme({
   typography: {
@@ -43,8 +45,8 @@ const Lesrepo = () => {
 
   const ongoingProt = [
     "https://drive.google.com/file/d/1Fh52LANLggi6JJk-pOg1FO__bqm2Y-D6/view?usp=sharing",
-    "https://drive.google.com/file/d/1kws3jxtZ3RzG_A__DdCS-LpEuAulqmAL/view?usp=sharing",
-    "https://drive.google.com/file/d/1UCnTPTIe1R1lO7pm6ZlpHAeOfRlUqIi6/view?usp=sharing",
+    "",
+    "",
     "https://drive.google.com/file/d/1IYj4Maq36rjUD82zPPu1eGn0ihF_lGvo/view?usp=sharing",
     "",
     "",
@@ -237,7 +239,15 @@ const Lesrepo = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",
@@ -350,7 +360,15 @@ const Lesrepo = () => {
                   <Typography
                     variant="body1"
                     sx={{
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       fontSize: { xl: 24, lg: 24, md: 24, sm: 18, xs: 18 },
                       position: "relative",
                     }}
@@ -365,7 +383,15 @@ const Lesrepo = () => {
                       <Typography
                         variant="body1"
                         sx={{
-                          fontFamily: "calibri",
+                          fontFamily: [
+                            "Calibri",
+                            "Candara",
+                            "Segoe",
+                            "Segoe UI",
+                            "Optima",
+                            "Arial",
+                            "sans-serif",
+                          ].join(","),
                           fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
                         }}
                         gutterBottom
@@ -405,7 +431,15 @@ const Lesrepo = () => {
                           <Typography
                             variant="body1"
                             sx={{
-                              fontFamily: "calibri",
+                              fontFamily: [
+                                "Calibri",
+                                "Candara",
+                                "Segoe",
+                                "Segoe UI",
+                                "Optima",
+                                "Arial",
+                                "sans-serif",
+                              ].join(","),
                               fontWeight: "bold",
                               fontSize: {
                                 xl: 18,
@@ -424,7 +458,15 @@ const Lesrepo = () => {
                             <Typography
                               variant="body1"
                               sx={{
-                                fontFamily: "calibri",
+                                fontFamily: [
+                                  "Calibri",
+                                  "Candara",
+                                  "Segoe",
+                                  "Segoe UI",
+                                  "Optima",
+                                  "Arial",
+                                  "sans-serif",
+                                ].join(","),
                                 fontSize: {
                                   xl: 18,
                                   lg: 18,
@@ -543,7 +585,15 @@ const Lesrepo = () => {
                   <Typography
                     variant="body1"
                     sx={{
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       fontSize: { xl: 24, lg: 24, md: 24, sm: 18, xs: 18 },
                       position: "relative",
                     }}
@@ -558,7 +608,15 @@ const Lesrepo = () => {
                       <Typography
                         variant="body1"
                         sx={{
-                          fontFamily: "calibri",
+                          fontFamily: [
+                            "Calibri",
+                            "Candara",
+                            "Segoe",
+                            "Segoe UI",
+                            "Optima",
+                            "Arial",
+                            "sans-serif",
+                          ].join(","),
                           fontSize: { xl: 18, lg: 18, md: 18, sm: 16, xs: 16 },
                         }}
                         gutterBottom
@@ -598,7 +656,15 @@ const Lesrepo = () => {
                           <Typography
                             variant="body1"
                             sx={{
-                              fontFamily: "calibri",
+                              fontFamily: [
+                                "Calibri",
+                                "Candara",
+                                "Segoe",
+                                "Segoe UI",
+                                "Optima",
+                                "Arial",
+                                "sans-serif",
+                              ].join(","),
                               fontWeight: "bold",
                               fontSize: {
                                 xl: 18,
@@ -617,7 +683,15 @@ const Lesrepo = () => {
                             <Typography
                               variant="body1"
                               sx={{
-                                fontFamily: "calibri",
+                                fontFamily: [
+                                  "Calibri",
+                                  "Candara",
+                                  "Segoe",
+                                  "Segoe UI",
+                                  "Optima",
+                                  "Arial",
+                                  "sans-serif",
+                                ].join(","),
                                 fontSize: {
                                   xl: 18,
                                   lg: 18,

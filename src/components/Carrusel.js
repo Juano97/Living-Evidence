@@ -6,6 +6,7 @@ import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from "@mui/material";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
@@ -18,6 +19,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import photo_1 from "../assets/images/news/ebhc1.png";
 import photo_2 from "../assets/images/news/ebhc2.png";
 import photo_3 from "../assets/images/news/ebhc3.png";
+import photo_4 from "../assets/images/news/ebhc4.png";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -31,22 +33,28 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: "calibri",
+          fontFamily: [
+            "Calibri",
+            "Candara",
+            "Segoe",
+            "Segoe UI",
+            "Optima",
+            "Arial",
+            "sans-serif",
+          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
       >
-        Our group, Living Evidence to Inform Health Decisions, will be actively
-        participating in the EBHC (Evidence-Based Health Care) Conference 2023,
-        scheduled for Taormina. This event offers a valuable platform for our
-        team to share the latest insights, innovations, and best practices in
-        evidence-based healthcare. We anticipate productive interactions with
-        experts, professionals, and enthusiasts at the conference as we
-        contribute to the field of health decision-making. Stay tuned for
-        updates on our involvement in the{" "}
+        Our group, Living Evidence for Health Decisions, is excited to actively
+        participate in the EBHC (Evidence-Based Health Care) Conference 2023 in
+        Taormina. We&#39;ll share insights, innovations, and best practices in
+        evidence-based healthcare, fostering interactions with experts,
+        professionals, and enthusiasts in health decision-making. Stay tuned for{" "}
         <Box fontWeight="bold" display="inline">
           #EBHC2023
-        </Box>
+        </Box>{" "}
+        updates.
       </Typography>
     ),
   },
@@ -57,20 +65,24 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: "calibri",
+          fontFamily: [
+            "Calibri",
+            "Candara",
+            "Segoe",
+            "Segoe UI",
+            "Optima",
+            "Arial",
+            "sans-serif",
+          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
       >
-        At the VII ISPOR Colombia Congress, our delegate Dra. María Ximena
-        Rojas-Reyes, delivered an enriching experience through the 'Living
-        Evidence to Inform Health Decisions' workshop. The training session
-        facilitated a comprehensive exploration for planning and developing
-        living evidence synthesis. Attendees acquired valuable insights and
-        knowledge, fostering the continuous advancement of healthcare
-        decision-making. We express our sincere appreciation to all participants
-        for their active engagement and eagerly anticipate future collaborations
-        in this pivotal field{" "}
+        At the VII ISPOR Colombia Congress, our delegate Dr. María Ximena
+        Rojas-Reyes led an enriching &#39;Living Evidence to Inform Health
+        Decisions&#39; workshop, offering valuable insights on living evidence
+        synthesis. Attendees acquired valuable insights and knowledge, fostering
+        the continuous advancement of healthcare decision-making.{" "}
         <Box fontWeight="bold" display="inline">
           #ISPORColombia #LivingEvidence
         </Box>
@@ -84,24 +96,69 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: "calibri",
+          fontFamily: [
+            "Calibri",
+            "Candara",
+            "Segoe",
+            "Segoe UI",
+            "Optima",
+            "Arial",
+            "sans-serif",
+          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
       >
-        The LE-IHD group participated in this year's prestigious Cochrane
-        Conference, which took place in London. At this esteemed event, we had
-        the privilege of presenting our program, 'Living Evidence to Inform
-        Health Decisions', with a particular emphasis on its knowledge transfer
-        capacity building core, the LE-IHD framework developed, and our latest
-        research advancements in the field of living evidence. Our presentation
-        was met with keen interest from a distinguished audience of healthcare
-        professionals, researchers, and subject matter experts. This conference
-        provided a priceless opportunity to reaffirm our resolute dedication to
-        evidence-based healthcare{" "}
+        The LE-IHD group presented at the prestigious Cochrane Conference in
+        London this year. We highlighted our program, &#39;Living Evidence to
+        Inform Health Decisions,&#39; focusing on its knowledge transfer
+        capacity building core, the LE-IHD framework, and our latest research.
+        The presentation received keen interest from a distinguished audience of
+        healthcare professionals and researchers. This conference reaffirmed our
+        dedication to evidence-based healthcare.{" "}
         <Box fontWeight="bold" display="inline">
           #CochraneLondon2023
         </Box>
+      </Typography>
+    ),
+  },
+  {
+    imgPath: photo_4,
+    text: (
+      <Typography
+        sx={{
+          borderTopRightRadius: "25px",
+          fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
+          fontFamily: [
+            "Calibri",
+            "Candara",
+            "Segoe",
+            "Segoe UI",
+            "Optima",
+            "Arial",
+            "sans-serif",
+          ].join(","),
+          color: "black",
+          flexGrow: 1,
+        }}
+      >
+        Save the date for our upcoming webinar{" "}
+        <Box fontWeight="bold" display="inline">
+          "Certainty of evidence for network meta-analysis"
+        </Box>{" "}
+        with the distinguished Dra. Romina Brignardello-Petersen. The webinar is
+        scheduled for November 16th, from 15:00 to 17:00 CET and will be
+        conducted in Spanish. Secure your spot by registering{" "}
+        <Link
+          fontWeight="bold"
+          href="https://forms.gle/3F2M7tjW5Pt6nYeP8"
+          target="_blank"
+          underline="none"
+          color="#339999"
+        >
+          here
+        </Link>{" "}
+        and join us for an enlightening masterclass.
       </Typography>
     ),
   },
@@ -162,7 +219,7 @@ function Carrusel() {
           index={activeStep}
           onChangeIndex={handleStepChange}
           enableMouseEvents
-          interval={5000}
+          interval={4000}
           id="slider"
           autoplay={_autoplay}
         >

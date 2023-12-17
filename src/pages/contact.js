@@ -2,6 +2,8 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Box, Typography, Container, Divider, Grid } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 const Contact = () => {
   return (
@@ -52,7 +54,15 @@ const Contact = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",

@@ -10,6 +10,8 @@ import {
   Grid,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 const Community = () => {
   return (
@@ -60,7 +62,15 @@ const Community = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",
@@ -115,7 +125,15 @@ const Community = () => {
                     variant="body1"
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       paddingX: "40px",
                     }}
                     gutterBottom
@@ -153,7 +171,15 @@ const Community = () => {
                     variant="body1"
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       paddingX: "40px",
                     }}
                     gutterBottom
@@ -191,7 +217,15 @@ const Community = () => {
                     variant="body1"
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
-                      fontFamily: "calibri",
+                      fontFamily: [
+                        "Calibri",
+                        "Candara",
+                        "Segoe",
+                        "Segoe UI",
+                        "Optima",
+                        "Arial",
+                        "sans-serif",
+                      ].join(","),
                       paddingX: "40px",
                     }}
                     gutterBottom

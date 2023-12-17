@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { Box, Typography, Container, Grid, Paper } from "@mui/material";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import Carrusel from "../components/Carrusel";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 export default function Home() {
   return (
@@ -103,7 +105,15 @@ export default function Home() {
                 variant="body1"
                 sx={{
                   fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-                  fontFamily: "calibri",
+                  fontFamily: [
+                    "Calibri",
+                    "Candara",
+                    "Segoe",
+                    "Segoe UI",
+                    "Optima",
+                    "Arial",
+                    "sans-serif",
+                  ].join(","),
                   marginTop: "-30px",
                   paddingTop: {
                     xl: "40px",

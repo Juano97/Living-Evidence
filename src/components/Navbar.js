@@ -137,7 +137,15 @@ export default function Navbar() {
                 sx={{
                   color: "#333333",
                   marginRight: "25px",
-                  fontFamily: "calibri",
+                  fontFamily: [
+                    "Calibri",
+                    "Candara",
+                    "Segoe",
+                    "Segoe UI",
+                    "Optima",
+                    "Arial",
+                    "sans-serif",
+                  ].join(","),
                   fontSize: 15,
                 }}
                 onClick={() => {

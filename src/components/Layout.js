@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Box, Container, Grid, Divider } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./layout.css";
+import { SEO } from "../components/SEO";
 
 const theme = createTheme({
   typography: {
@@ -23,10 +24,11 @@ theme.typography.body1 = {
 
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Navbar />
-      <Box sx={{ minHeight: "calc(100% - 210px)" }}>{children}</Box>
-      {/* <Divider
+    <SEO>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Box sx={{ minHeight: "calc(100% - 210px)" }}>{children}</Box>
+        {/* <Divider
         sx={{
           height: "2px",
           marginBottom: "25px",
@@ -35,9 +37,12 @@ const Layout = ({ children }) => {
           background: "#339999",
         }}
       /> */}
-      <Footer />
-    </ThemeProvider>
+        <Footer />
+      </ThemeProvider>
+    </SEO>
   );
 };
 
 export default Layout;
+
+export const Head = () => <SEO />;

@@ -16,6 +16,8 @@ import {
   ListItemText,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import { SEO } from "../components/SEO";
+export const Head = () => <SEO />;
 
 // supporting tools
 
@@ -110,7 +112,15 @@ const LE_IHD_Tools = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",
@@ -140,7 +150,15 @@ const LE_IHD_Tools = () => {
             variant="body1"
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-              fontFamily: "calibri",
+              fontFamily: [
+                "Calibri",
+                "Candara",
+                "Segoe",
+                "Segoe UI",
+                "Optima",
+                "Arial",
+                "sans-serif",
+              ].join(","),
               marginTop: "-30px",
               paddingTop: {
                 xl: "40px",
