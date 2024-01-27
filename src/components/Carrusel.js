@@ -16,6 +16,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
+import photo_0 from "../assets/images/news/ebhc01.png";
 import photo_1 from "../assets/images/news/ebhc1.png";
 import photo_2 from "../assets/images/news/ebhc2.png";
 import photo_3 from "../assets/images/news/ebhc3.png";
@@ -26,6 +27,44 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const colors = ["#fc7a00", "#339999", "#99cc33", "#0b0b0b"];
 
 const images = [
+  {
+    imgPath: photo_0,
+    text: (
+      <Typography
+        sx={{
+          borderTopRightRadius: "25px",
+          fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
+          fontFamily: [
+            "Calibri",
+            "Candara",
+            "Segoe",
+            "Segoe UI",
+            "Optima",
+            "Arial",
+            "sans-serif",
+          ].join(","),
+          color: "black",
+          flexGrow: 1,
+        }}
+      >
+        Webinar series on 'Best Practices in Evidence Synthesis'. Did you miss
+        any of them? click{" "}
+        <Link
+          fontWeight="bold"
+          href="/leihdtools"
+          underline="none"
+          color="#339999"
+        >
+          here
+        </Link>{" "}
+        to the video recordings{" "}
+        <Box fontWeight="bold" display="inline">
+          #EBHC2023
+        </Box>{" "}
+        updates.
+      </Typography>
+    ),
+  },
   {
     imgPath: photo_1,
     text: (

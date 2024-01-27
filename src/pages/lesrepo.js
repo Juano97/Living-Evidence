@@ -33,6 +33,7 @@ const Lesrepo = () => {
     "Hyperbaric oxygen therapy In patients with persistent COVID 19",
     "Biologic therapy (monoclonal antibodies) be given in combination with other interventions (LABA/LAMA; ICS, pulmonary rehabilitation) in adults with COPD",
     "Combined therapy vs monotherapy in treatment of hypertension in adults",
+    "Glucagon-like peptide analogues and agonists in type II diabetes mellitus",
   ];
 
   const ongoingDet = [
@@ -51,6 +52,43 @@ const Lesrepo = () => {
     "",
     "",
     "https://drive.google.com/file/d/1dV7QY1gWVqeEBjHG6_LFS67lhRsnoFIt/view?usp=sharing",
+    "",
+    "https://drive.google.com/file/d/1BM9VqWeRKEeLrjK_SnnQsNk_gwwW47v7/view?usp=share_link",
+  ];
+
+  const ongoingBline = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://drive.google.com/file/d/1quZ3jbnKQEZXUvxKoQkp050Ri-uP9C0O/view?usp=share_link",
+  ];
+
+  const ongoingUpdRep = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "https://drive.google.com/file/d/1A14Xzy4l3Hx6V2JR2vH3Jgy9OryaoNuw/view?usp=sharing",
+  ];
+
+  const ongoingEviSurv = [
+    "https://osf.io/pzbna",
+    "",
+    "",
+    "https://osf.io/x38az",
+    "https://osf.io/hj7vy",
+    "https://osf.io/uh8k7",
+    "https://osf.io/2yzu3",
+    "",
     "",
   ];
 
@@ -81,6 +119,7 @@ const Lesrepo = () => {
     "https://app.iloveevidence.com/loves/5e6fdb9669c00e4ac072701d?question_domain=5b1dcd8ae611de7ae84e8f14&population=60bf8350ea8890b2d8b37150&intervention=5e8fbba83d05155dd92c3199&intervention_variable=603b9fe03d05151f35cf13dc&classification=all",
     "https://app.iloveevidence.com/loves/5c87af8ac80dd42a1ac0c712?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d0b5bdedbe4d25bcfbee803&intervention=642185205ef94100080f67b1&classification=systematic-review",
     "",
+    "https://app.iloveevidence.com/loves/5b7e78ddc80dd4376f2b3dd5?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d52919a69c00e3de733d81f&intervention=5d67d29d69c00e131b5a4cad&classification=systematic-review",
   ];
 
   const getOngoingDict = () => {
@@ -88,9 +127,9 @@ const Lesrepo = () => {
     for (let index = 0; index < ongoingSum.length; index++) {
       temp.push({
         0: ongoingProt[index],
-        1: "",
+        1: ongoingBline[index],
         2: "",
-        3: "",
+        3: ongoingEviSurv[index],
         4: ongoingLOVE[index],
       });
     }
@@ -110,7 +149,7 @@ const Lesrepo = () => {
     "Chimeric antigen receptor T cell therapy for hematological malignancies",
     "Fecal microbiota transplant for ulcerative colitis ",
     "Mechanical assist devices in cardiovascular diseases",
-    "Glucagon-like peptide analogues and agonists in type II diabetes mellitus",
+
     "Three-dimensional mammography for breast cancer",
     "Bevacizumab, olaparib, rucaparib and niraparib for ovarian cancer",
   ];
@@ -119,7 +158,7 @@ const Lesrepo = () => {
     "https://drive.google.com/file/d/1z91-Xu0F3-lwvIWR3tiLdjUcFNpUPtoR/view?usp=share_link",
     "https://drive.google.com/file/d/1mwoCWdqZh3F2885Ti0Fi5nIOM0c_rWk_/view?usp=sharing",
     "https://drive.google.com/file/d/13K1tE0RqmIMRCpu578z4MD9OlQUbB05K/view?usp=sharing",
-    "https://drive.google.com/file/d/1BM9VqWeRKEeLrjK_SnnQsNk_gwwW47v7/view?usp=share_link",
+
     "https://drive.google.com/file/d/1wb0-h386fNnX5SpZ89lnDv7xJDkNADUN/view?usp=share_link",
     "https://drive.google.com/file/d/1LLS3Www-jMOVSNq1r4v12bB9AnQnzLmQ/view?usp=sharing",
   ];
@@ -128,7 +167,7 @@ const Lesrepo = () => {
     "https://drive.google.com/file/d/1g1dyAEnjEL5LHBgdE0T3l2aZ9g46fCB3/view?usp=share_link",
     "https://drive.google.com/file/d/1zIgAeIdSMRJTplmnqIeM4KiwCbg_AQPe/view?usp=sharing",
     "https://drive.google.com/file/d/1uf--QqHuk0r3VVwS9W3rnrP0xWRdTWO6/view?usp=sharing",
-    "https://drive.google.com/file/d/1quZ3jbnKQEZXUvxKoQkp050Ri-uP9C0O/view?usp=share_link",
+
     "",
     "https://drive.google.com/file/d/1kyzC2vO4Q3qTRYliqrsxniJYeKso-OUy/view?usp=sharing",
   ];
@@ -137,7 +176,7 @@ const Lesrepo = () => {
     "",
     "https://drive.google.com/file/d/1cEPGL92wsx_SFKz875sdkz0m92jpL37v/view?usp=sharing",
     "",
-    "https://drive.google.com/file/d/1A14Xzy4l3Hx6V2JR2vH3Jgy9OryaoNuw/view?usp=sharing",
+
     "",
     "https://drive.google.com/file/d/1tfmQ7EvJk8MTyHbSGTwicRSBxgp8Ghet/view?usp=sharing",
   ];
@@ -146,7 +185,7 @@ const Lesrepo = () => {
     "https://app.iloveevidence.com/loves/60a515783d05155d670f4f6d?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d4a749c69c00e69c91e5ff5&intervention=60a4e5ac69c00e3874b51aa6&classification=all",
     "https://app.iloveevidence.com/loves/5b5f2f63c80dd41ff5583f36?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d52970369c00e3de533d807&intervention=5d9f92b83c12ef4de3dce659&classification=systematic-review",
     "https://app.iloveevidence.com/loves/60be456f35525860bb2a3a02?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d27427edaeedf1d3af33328&intervention=60ad7996355258737783d474&classification=all",
-    "https://app.iloveevidence.com/loves/5b7e78ddc80dd4376f2b3dd5?question_domain=5b1dcd8ae611de7ae84e8f14&population=5d52919a69c00e3de733d81f&intervention=5d67d29d69c00e131b5a4cad&classification=systematic-review",
+
     "https://app.iloveevidence.com/loves/598e0a2b65dee02d5eede318?question_domain=5b1dccf3e611de7ae84e8f12&population=5d07efb1dbe4d25bcebee227&intervention=5e66a2403d051578b5c8b494&classification=systematic-review",
     [
       {
