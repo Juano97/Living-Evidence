@@ -1,0 +1,6 @@
+firebase login (Login to Firebase)
+firebase project:list (Select Living Evidence Project)
+npm run develop (See the project in developer mode, changes are being made dynamically)
+npm run build (build the solution)
+firebase serve (run the solution in one port to verify everything is ok)
+firebase deploy (upload the solution to firebase)
