@@ -11,7 +11,7 @@ import {
   CardContent,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
-
+import "@fontsource/nanum-gothic"
 import maria_ximena from "../assets/images/team/Maria_Ximena.png";
 import ariadna from "../assets/images/team/Ariadna.png";
 import gabriel_rada from "../assets/images/team/Gabriel_Rada.png";
@@ -94,6 +94,7 @@ const About = () => {
             sx={{
               fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",

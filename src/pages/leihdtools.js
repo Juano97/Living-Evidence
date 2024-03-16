@@ -18,6 +18,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import "@fontsource/nanum-gothic"
 import { SEO } from "../components/SEO";
 
 import webinar1 from "../assets/images/webinars/Webinar_invitation1.png";
@@ -138,6 +139,7 @@ const LE_IHD_Tools = () => {
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",
@@ -176,6 +178,7 @@ const LE_IHD_Tools = () => {
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",

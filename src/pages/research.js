@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { ExpandMore } from "@mui/icons-material";
 import { createTheme } from "@mui/material/styles";
+import "@fontsource/nanum-gothic"
 import { StaticImage } from "gatsby-plugin-image";
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
@@ -237,6 +238,7 @@ const Research = () => {
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",
@@ -341,6 +343,7 @@ const Research = () => {
                     variant="body1"
                     sx={{
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",
@@ -360,6 +363,7 @@ const Research = () => {
                   <Typography
                     sx={{
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",

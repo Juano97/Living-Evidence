@@ -5,10 +5,11 @@ import { Box, Container, Grid, Divider } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./layout.css";
 import { SEO } from "../components/SEO";
+import "@fontsource/nanum-gothic"
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["Saira", "calibri", "sans-serif"].join(","),
+    fontFamily: ["Nanum Gothic", "Saira", "calibri", "sans-serif"].join(","),
   },
 });
 

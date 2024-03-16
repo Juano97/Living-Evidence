@@ -9,6 +9,7 @@ import {
   CardContent,
   Grid,
 } from "@mui/material";
+import "@fontsource/nanum-gothic"
 import { StaticImage } from "gatsby-plugin-image";
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
@@ -63,6 +64,7 @@ const Community = () => {
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",
@@ -126,6 +128,7 @@ const Community = () => {
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",
@@ -172,6 +175,7 @@ const Community = () => {
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",
@@ -218,6 +222,7 @@ const Community = () => {
                     sx={{
                       fontSize: { xl: 20, lg: 20, md: 20, sm: 18, xs: 18 },
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",

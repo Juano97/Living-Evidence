@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { Box, Typography, Container, Grid, Paper } from "@mui/material";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import Carrusel from "../components/Carrusel";
+import "@fontsource/nanum-gothic"
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
 
@@ -16,77 +17,11 @@ export default function Home() {
         }}
       >
         <Container>
-          {/* <Grid
-            sx={{ background: "gray", height: "100%" }}
-            sm={12}
-            xs={12}
-            md={3}
-          >
-            <Box sx={{ height: "100%" }}>
-              <StaticImage
-                src={"../assets/images/doctor_image1.png"}
-                alt="doctor"
-                style={{ height: "100%" }}
-                imgStyle={{}}
-                layout="constrained"
-                as="section"
-              ></StaticImage>
-              <Paper
-                sx={{
-                  height: "100%",
-                  backgroundImage: `url(${foto})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "center",
-                  display: "flex",
-                }}
-              >
-                <StaticImage
-                  src={"../assets/images/logo-v-long.png"}
-                  width={400}
-                ></StaticImage>
-              </Paper>
-            </Box>
-          </Grid> */}
           <Grid md={7}>
             <Box sx={{ background: "#fff" }}>
               <Container
                 sx={{ height: { xs: "30px", sm: "50px", md: "100px" } }}
               ></Container>
-              {/* <Container
-                sx={{
-                  display: "flex",
-                  height: {
-                    xl: "91.22px",
-                    lg: "91.22px",
-                    md: "89.55px",
-                    sm: "46.67px",
-                    xs: "46.67px",
-                  },
-                  marginY: "50px",
-                }}
-              >
-                <Typography
-                  variant="h3"
-                  sx={{
-                    fontSize: { xl: 50, lg: 50, md: 50, sm: 40, xs: 40 },
-                    display: "flex",
-                    justifyContent: { xs: "center", sm: "initial" },
-                    alignItems: "center",
-                    width: "100%",
-                    // paddingLeft: {
-                    //   xl: "101.22px",
-                    //   lg: "101.22px",
-                    //   md: "101.22px",
-                    //   sm: "101.22px",
-                    // },
-                  }}
-                >
-                  Living Evidence to Inform Health Decisions (LE-IHD) Program
-                </Typography>
-              </Container> */}
               <Container
                 sx={{ width: { xl: "70%", lg: "60%", md: "60%", sm: "60%" } }}
               >
@@ -106,6 +41,7 @@ export default function Home() {
                 sx={{
                   fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
                   fontFamily: [
+                    "Nanum Gothic",
                     "Calibri",
                     "Candara",
                     "Segoe",

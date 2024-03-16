@@ -14,6 +14,7 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 import { createTheme } from "@mui/material/styles";
 import { StaticImage } from "gatsby-plugin-image";
+import "@fontsource/nanum-gothic"
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
 
@@ -279,6 +280,7 @@ const Lesrepo = () => {
             sx={{
               fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",
@@ -400,6 +402,7 @@ const Lesrepo = () => {
                     variant="body1"
                     sx={{
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",
@@ -423,6 +426,7 @@ const Lesrepo = () => {
                         variant="body1"
                         sx={{
                           fontFamily: [
+                            "Nanum Gothic",
                             "Calibri",
                             "Candara",
                             "Segoe",
@@ -471,6 +475,7 @@ const Lesrepo = () => {
                             variant="body1"
                             sx={{
                               fontFamily: [
+                                "Nanum Gothic",
                                 "Calibri",
                                 "Candara",
                                 "Segoe",
@@ -498,6 +503,7 @@ const Lesrepo = () => {
                               variant="body1"
                               sx={{
                                 fontFamily: [
+                                  "Nanum Gothic",
                                   "Calibri",
                                   "Candara",
                                   "Segoe",
@@ -625,6 +631,7 @@ const Lesrepo = () => {
                     variant="body1"
                     sx={{
                       fontFamily: [
+                        "Nanum Gothic",
                         "Calibri",
                         "Candara",
                         "Segoe",
@@ -648,6 +655,7 @@ const Lesrepo = () => {
                         variant="body1"
                         sx={{
                           fontFamily: [
+                            "Nanum Gothic",
                             "Calibri",
                             "Candara",
                             "Segoe",
@@ -696,6 +704,7 @@ const Lesrepo = () => {
                             variant="body1"
                             sx={{
                               fontFamily: [
+                                "Nanum Gothic",
                                 "Calibri",
                                 "Candara",
                                 "Segoe",
@@ -723,6 +732,7 @@ const Lesrepo = () => {
                               variant="body1"
                               sx={{
                                 fontFamily: [
+                                  "Nanum Gothic",
                                   "Calibri",
                                   "Candara",
                                   "Segoe",

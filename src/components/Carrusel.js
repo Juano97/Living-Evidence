@@ -15,7 +15,7 @@ import { Container } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
+import "@fontsource/nanum-gothic"
 import photo_0 from "../assets/images/news/ebhc01.png";
 import photo_1 from "../assets/images/news/ebhc1.png";
 import photo_2 from "../assets/images/news/ebhc2.png";
@@ -35,6 +35,7 @@ const images = [
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
           fontFamily: [
+            "Nanum Gothic",
             "Calibri",
             "Candara",
             "Segoe",
@@ -73,6 +74,7 @@ const images = [
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
           fontFamily: [
+            "Nanum Gothic",
             "Calibri",
             "Candara",
             "Segoe",
@@ -105,6 +107,7 @@ const images = [
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
           fontFamily: [
+            "Nanum Gothic",
             "Calibri",
             "Candara",
             "Segoe",
@@ -136,6 +139,7 @@ const images = [
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
           fontFamily: [
+            "Nanum Gothic",
             "Calibri",
             "Candara",
             "Segoe",
@@ -169,6 +173,7 @@ const images = [
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
           fontFamily: [
+            "Nanum Gothic",
             "Calibri",
             "Candara",
             "Segoe",
@@ -258,7 +263,7 @@ function Carrusel() {
           index={activeStep}
           onChangeIndex={handleStepChange}
           enableMouseEvents
-          interval={4000}
+          interval={10000}
           id="slider"
           autoplay={_autoplay}
         >

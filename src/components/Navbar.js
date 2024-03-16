@@ -10,6 +10,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import "@fontsource/nanum-gothic"
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, navigate } from "gatsby";
@@ -18,13 +19,10 @@ import logo from "../assets/images/logo-h.png";
 
 const drawerWidth = 240;
 const navItems = [
-  "Home",
-  "About Us",
   "Research and \n Innovation",
   "Community and \n Services",
   "Training and \n Tools",
   "LE Synthesis \n Repository",
-  "Contact Us",
 ];
 const navPages = [
   "",
@@ -138,6 +136,7 @@ export default function Navbar() {
                   color: "#333333",
                   marginRight: "25px",
                   fontFamily: [
+                    "Nanum Gothic",
                     "Calibri",
                     "Candara",
                     "Segoe",

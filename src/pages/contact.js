@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Box, Typography, Container, Divider, Grid } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import "@fontsource/nanum-gothic"
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
 
@@ -55,6 +56,7 @@ const Contact = () => {
             sx={{
               fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
               fontFamily: [
+                "Nanum Gothic",
                 "Calibri",
                 "Candara",
                 "Segoe",

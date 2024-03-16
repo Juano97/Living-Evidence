@@ -5,6 +5,7 @@ import FolderIcon from "@mui/icons-material/Folder";
 import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import "@fontsource/nanum-gothic"
 import {
   Box,
   Container,
@@ -61,14 +62,6 @@ export default function Footer() {
           textAlign: "center",
         }}
       >
-        {/* <Typography
-          sx={{
-            fontSize: { xl: 12, lg: 12, md: 12, sm: 12, xs: 12 },
-            marginBottom: "10px",
-          }}
-        >
-          le-ihd.program@livingevidenceihd.com
-        </Typography> */}
 
         <Box sx={{ width: 500, marginBottom: "10px" }}>
           {title.map((name, j) => (
@@ -83,7 +76,7 @@ export default function Footer() {
                   navigate("/" + navPages[j]);
                 }}
               >
-                {<img height={24} src={pngs[j]}></img>}
+                {<img height={34} src={pngs[j]}></img>}
               </Button>
             </Tooltip>
           ))}
