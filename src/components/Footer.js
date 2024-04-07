@@ -26,22 +26,20 @@ import i_dblue from "../assets/images/simple-logo-dblue.png";
 import i_lgreen from "../assets/images/simple-logo-lgreen.png";
 import i_black from "../assets/images/simple-logo-black.png";
 
-const pngs = [i_color, i_orange, i_lblue, i_dblue, i_lgreen, i_black];
+const pngs = [i_orange, i_lblue, i_dblue, i_lgreen, i_black];
 const title = [
-  "About Us",
+  "Home",
   "Research and Innovation",
   "Community and Services",
   "Training and Tools",
   "LE Synthesis Repository",
-  "Contact Us",
 ];
 const navPages = [
-  "about",
+  "",
   "research",
   "community",
   "leihdtools",
   "lesrepo",
-  "contact",
 ];
 
 export default function Footer() {
@@ -76,7 +74,7 @@ export default function Footer() {
                   navigate("/" + navPages[j]);
                 }}
               >
-                {<img height={34} src={pngs[j]}></img>}
+                {<img height={40} src={pngs[j]}></img>}
               </Button>
             </Tooltip>
           ))}

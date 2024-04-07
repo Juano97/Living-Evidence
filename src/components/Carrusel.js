@@ -34,16 +34,6 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: [
-            "Nanum Gothic",
-            "Calibri",
-            "Candara",
-            "Segoe",
-            "Segoe UI",
-            "Optima",
-            "Arial",
-            "sans-serif",
-          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
@@ -73,16 +63,6 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: [
-            "Nanum Gothic",
-            "Calibri",
-            "Candara",
-            "Segoe",
-            "Segoe UI",
-            "Optima",
-            "Arial",
-            "sans-serif",
-          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
@@ -106,16 +86,6 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: [
-            "Nanum Gothic",
-            "Calibri",
-            "Candara",
-            "Segoe",
-            "Segoe UI",
-            "Optima",
-            "Arial",
-            "sans-serif",
-          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
@@ -138,16 +108,6 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: [
-            "Nanum Gothic",
-            "Calibri",
-            "Candara",
-            "Segoe",
-            "Segoe UI",
-            "Optima",
-            "Arial",
-            "sans-serif",
-          ].join(","),
           color: "black",
           flexGrow: 1,
         }}
@@ -172,16 +132,6 @@ const images = [
         sx={{
           borderTopRightRadius: "25px",
           fontSize: { xl: 18, lg: 18, md: 18, sm: 14, xs: 14 },
-          fontFamily: [
-            "Nanum Gothic",
-            "Calibri",
-            "Candara",
-            "Segoe",
-            "Segoe UI",
-            "Optima",
-            "Arial",
-            "sans-serif",
-          ].join(","),
           color: "black",
           flexGrow: 1,
         }}

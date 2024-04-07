@@ -1,16 +1,20 @@
 import * as React from "react";
-import Layout from "../components/Layout";
-import { Box, Typography, Container, Divider, Grid } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+} from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/nanum-gothic"
+
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
 
-const Contact = () => {
+const WWD = () => {
   return (
     <Box
       sx={{
-        marginTop: "40px",
+        marginTop: "60px",
         height: "100%",
       }}
     >
@@ -40,7 +44,7 @@ const Contact = () => {
               width: "100%",
             }}
           >
-            Contact us
+            What we do?
           </Typography>
         </Container>
         <Container sx={{ height: "50px" }}></Container>
@@ -54,16 +58,6 @@ const Contact = () => {
           variant="body1"
           sx={{
             fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
-            fontFamily: [
-              "Nanum Gothic",
-              "Calibri",
-              "Candara",
-              "Segoe",
-              "Segoe UI",
-              "Optima",
-              "Arial",
-              "sans-serif",
-            ].join(","),
             marginTop: "-30px",
             paddingTop: {
               xl: "40px",
@@ -86,15 +80,22 @@ const Contact = () => {
           }}
           gutterBottom
         >
-          <Box fontWeight="bold" display="inline">
-            Living Evidence-IHD Program administrator
-          </Box>
-          <br /> <br />
-          le-ihd.program@livingevidenceihd.com
+          The program has two main development areas. On one hand, we conduct <Box fontWeight="bold" display="inline">
+            research
+          </Box> aimed at improving the
+          production, use and application of the living evidence synthesis in different knowledge transfer scenarios, as
+          well as identifying and evaluating efficient strategies for building capacity among key organizations in the
+          health sector. On the other hand, the program provides <Box fontWeight="bold" display="inline">
+            services
+          </Box> to support both, the building of the capacities
+          among groups and organizations for the production and use of living evidence syntheses to inform health
+          decisions, as well as the generation, maintenance, and periodical reporting of living evidence synthesis
+          necessary to inform living recommendations in clinical practice guidelines, health technology evaluations
+          (living HTA), evidence summaries for institutional or public policies among other applications.
         </Typography>
       </Container>
     </Box>
   );
 };
 
-export default Contact;
+export default WWD;

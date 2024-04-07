@@ -25,13 +25,10 @@ const navItems = [
   "LE Synthesis \n Repository",
 ];
 const navPages = [
-  "",
-  "about",
   "research",
   "community",
   "leihdtools",
   "lesrepo",
-  "contact",
 ];
 
 export default function Navbar() {
@@ -135,16 +132,6 @@ export default function Navbar() {
                 sx={{
                   color: "#333333",
                   marginRight: "25px",
-                  fontFamily: [
-                    "Nanum Gothic",
-                    "Calibri",
-                    "Candara",
-                    "Segoe",
-                    "Segoe UI",
-                    "Optima",
-                    "Arial",
-                    "sans-serif",
-                  ].join(","),
                   fontSize: 15,
                 }}
                 onClick={() => {

@@ -9,7 +9,7 @@ import "@fontsource/nanum-gothic"
 
 const theme = createTheme({
   typography: {
-    fontFamily: ["Nanum Gothic", "Saira", "calibri", "sans-serif"].join(","),
+    fontFamily: ["Nanum Gothic"]
   },
 });
 
@@ -29,15 +29,6 @@ const Layout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Box sx={{ minHeight: "calc(100% - 210px)" }}>{children}</Box>
-        {/* <Divider
-        sx={{
-          height: "2px",
-          marginBottom: "25px",
-          marginX: "100px",
-          //backgroundImage: "linear-gradient(to right, #fff , #339999)",
-          background: "#339999",
-        }}
-      /> */}
         <Footer />
       </ThemeProvider>
     </SEO>

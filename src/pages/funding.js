@@ -1,12 +1,16 @@
 import * as React from "react";
-import Layout from "../components/Layout";
-import { Box, Typography, Container, Divider, Grid } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+} from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/nanum-gothic"
+
 import { SEO } from "../components/SEO";
 export const Head = () => <SEO />;
 
-const Contact = () => {
+const Funding = () => {
   return (
     <Box
       sx={{
@@ -40,7 +44,7 @@ const Contact = () => {
               width: "100%",
             }}
           >
-            Contact us
+            Funding & support
           </Typography>
         </Container>
         <Container sx={{ height: "50px" }}></Container>
@@ -54,16 +58,6 @@ const Contact = () => {
           variant="body1"
           sx={{
             fontSize: { xl: 22, lg: 22, md: 22, sm: 20, xs: 20 },
-            fontFamily: [
-              "Nanum Gothic",
-              "Calibri",
-              "Candara",
-              "Segoe",
-              "Segoe UI",
-              "Optima",
-              "Arial",
-              "sans-serif",
-            ].join(","),
             marginTop: "-30px",
             paddingTop: {
               xl: "40px",
@@ -86,15 +80,19 @@ const Contact = () => {
           }}
           gutterBottom
         >
-          <Box fontWeight="bold" display="inline">
-            Living Evidence-IHD Program administrator
-          </Box>
-          <br /> <br />
-          le-ihd.program@livingevidenceihd.com
+          This program is being coordinated from the Department of Epidemiology and Public Health of the Institut de Recerca de
+          l'Hospital de la Santa Creu i Sant Pau – Institut d'Investigació Biomèdica Sant Pau (IIB Sant Pau), cradle of the Ibero-American
+          Cochrane Center in Barcelona, Spain. It is supported by an international group of expert methodologist advisers on topics
+          related to the living evidence synthesis, development of clinical practice guidelines, and health technology evaluations. <br /> <br />
+
+          The program is led by María Ximena Rojas RN, MSc, Ph.D, as principal investigator who started it as a beneficiary of the
+          H2020 Marie Curie Actions for Individual Researchers grant (MSCA-IF-EF- ST #894990). Currently, it has different funding
+          sources, including a grant from the Programa Estatal de Generación de Conocimiento y Fortalecimiento del Sistema Español,
+          Subprograma estatal de generación de conocimiento, Instituto Carlos III de Madrid.
         </Typography>
       </Container>
     </Box>
   );
 };
 
-export default Contact;
+export default Funding;

@@ -5,6 +5,11 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import Carrusel from "../components/Carrusel";
 import "@fontsource/nanum-gothic"
 import { SEO } from "../components/SEO";
+import About from "./about";
+import WWD from "./wwd";
+import OurMethods from "./ourMethods";
+import Funding from "./funding";
+import Contact from "./contact";
 export const Head = () => <SEO />;
 
 export default function Home() {
@@ -40,16 +45,6 @@ export default function Home() {
                 variant="body1"
                 sx={{
                   fontSize: { xl: 20, lg: 20, md: 20, sm: 16, xs: 16 },
-                  fontFamily: [
-                    "Nanum Gothic",
-                    "Calibri",
-                    "Candara",
-                    "Segoe",
-                    "Segoe UI",
-                    "Optima",
-                    "Arial",
-                    "sans-serif",
-                  ].join(","),
                   marginTop: "-30px",
                   paddingTop: {
                     xl: "40px",
@@ -86,12 +81,16 @@ export default function Home() {
             </Container>
           </Grid>
           <Grid md={2}></Grid>
+          <WWD />
+          <OurMethods />
+          <About />
+          <Funding />
+          <Contact />
         </Container>
-      </Box>
 
-      <Box sx={{ background: "#fff" }}>
         <Container sx={{ height: "100px" }}></Container>
       </Box>
+
     </Layout>
   );
 }
