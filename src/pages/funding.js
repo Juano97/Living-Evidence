@@ -3,6 +3,8 @@ import {
   Box,
   Typography,
   Container,
+  List,
+  ListItem,
 } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/nanum-gothic"
@@ -80,18 +82,30 @@ const Funding = () => {
           }}
           gutterBottom
         >
-          This program is being coordinated from the Department of Epidemiology and Public Health of the Institut de Recerca de
-          l'Hospital de la Santa Creu i Sant Pau – Institut d'Investigació Biomèdica Sant Pau (IIB Sant Pau), cradle of the Ibero-American
-          Cochrane Center in Barcelona, Spain. It is supported by an international group of expert methodologist advisers on topics
-          related to the living evidence synthesis, development of clinical practice guidelines, and health technology evaluations. <br /> <br />
-
-          The program is led by María Ximena Rojas RN, MSc, Ph.D, as principal investigator who started it as a beneficiary of the
-          H2020 Marie Curie Actions for Individual Researchers grant (MSCA-IF-EF- ST #894990). Currently, it has different funding
-          sources, including a grant from the Programa Estatal de Generación de Conocimiento y Fortalecimiento del Sistema Español,
-          Subprograma estatal de generación de conocimiento, Instituto Carlos III de Madrid.
+          The Living Evidence to Inform Health Decisions (LE-IHD) program was developed as
+          part of the European Union’s Horizon 2020 research and innovation program under a
+          Marie Skłodowska-Curie IF Action. Grant agreement No. MSCA-IF-EF-ST #894990 (to
+          María Ximena Rojas). <br /> <br />
+          The program is being coordinated by Maria Ximena Rojas, senior researcher from the
+          Department of Epidemiology and Public Health of the Institut de Recerca de l&#39;Hospital
+          de la Santa Creu i Sant Pau – Institut d&#39;Investigació Biomèdica Sant Pau (IIB Sant Pau),
+          cradle of the Ibero-American Cochrane Center and the Barcelona GRADE center in
+          Barcelona, Spain. It is supported by an international group of expert methodologist
+          advisers on topics related to the living evidence synthesis, development of clinical
+          practice guidelines, and health technology evaluations.
+          The LE-IHD program´s projects and developments have received additional financial
+          support from:
+          <List>
+            <ListItem> - Instituto Carlos III (ISC-III) Madrid, Spain, Fondos FEDER. Grant PI21/01564;
+              2021 call. To the project “Strengthening decision-making capacity in the
+              Spanish Health System through living evidence: An innovative framework” </ListItem>
+            <ListItem> - Agència de gestió d&#39;ajuts universitaris i de recerca (AGAUR), Generalitat de
+              Catalunya. Ajuts d’Indústria del Coneixement (IdC). Modalitat C. Innovadors.
+              Expedient: 2023 INNOV 00016. CIF (G60136934)</ListItem>
+          </List>
         </Typography>
-      </Container>
-    </Box>
+      </Container >
+    </Box >
   );
 };
 

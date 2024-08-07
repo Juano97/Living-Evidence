@@ -12,8 +12,8 @@ import {
 import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/nanum-gothic"
 import maria_ximena from "../assets/images/team/Maria_Ximena.png";
-import ariadna from "../assets/images/team/Ariadna.png";
 import gabriel_rada from "../assets/images/team/Gabriel_Rada.png";
+import ariadna from "../assets/images/team/Ariadna.png";
 import gerard from "../assets/images/team/Gerard_Urrutia.png";
 
 import { SEO } from "../components/SEO";
@@ -213,22 +213,6 @@ const About = () => {
               )}
             </Grid>
             <Grid md={2}></Grid>
-            <Grid
-              md={5}
-              sx={{
-                display: "flex",
-                justifyContent: "left",
-                alignItems: "center",
-                height: "160px",
-                marginTop: { xs: "10px", sm: "10px", md: "0px" },
-              }}
-            >
-              {MyCardL(
-                gabriel_rada,
-                "Gabriel Rada MD.",
-                "Director Fundación Epistemonikos"
-              )}
-            </Grid>
           </Grid>
         </Container>
         <Container sx={{ height: "60px" }}>
