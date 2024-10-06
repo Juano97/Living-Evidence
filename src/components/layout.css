@@ -1,0 +1,23 @@
+@import "@fontsource-variable/saira";
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+  font-family: "Nanum Gothic", "Saira", "calibri";
+}
+
+body {
+  margin: 0px;
+}
+
+#panel2a-header-summary {
+  .MuiAccordionSummary-content {
+    margin: 0px;
+  }
+}
+
+#panel2a-header-details {
+  padding-top: 0;
+}
